@@ -156,7 +156,7 @@ namespace exercice6
                 SR.PointsNotes = 0; // bug
                 SR.NbreNotes = 0;
                 // ajouter le StagiaireRow au dataTable du DataSet
-               Donnees.DatasetFormation.Stagiaire.AddStagiaireRow(SR);
+               Donnees.DatasetFormation.Stagiaire.AddStagiaireRow(SR);//test commit
                 // impacter la MAJ en BDD
                Donnees.TaStagiaires.Update(Donnees.DatasetFormation.Stagiaire);
                 return true;
