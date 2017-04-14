@@ -16,6 +16,7 @@ namespace Exo7
         public frmExo7()
         {
             InitializeComponent();
+            
         }
 
         private void frmExo7_Load(object sender, EventArgs e)
@@ -28,6 +29,10 @@ namespace Exo7
                 unStagiaire = new MStagiaire();
                 unStagiaire.NumOsia = stagiairerow.numOsiaStagiaire;
                 unStagiaire.Nom = stagiairerow.NomStagiaire;
+                unStagiaire.Prenom = stagiairerow.prenomStagiaire;
+                unStagiaire.CodePostal = stagiairerow.codePostalStagiaire;
+                unStagiaire.Rue = stagiairerow.rueStagiaire;
+                unStagiaire.Ville = stagiairerow.villeStagiaire;
                 ///
                 Donnees.ArrayStag.Add(unStagiaire);
                 afficheStagiaires();
@@ -52,6 +57,9 @@ namespace Exo7
             dt.Columns.Add(new DataColumn("numéro OSIA", typeof(System.Int32)));
             dt.Columns.Add(new DataColumn("Nom", typeof(System.String)));
             dt.Columns.Add(new DataColumn("Prénom", typeof(System.String)));
+            dt.Columns.Add(new DataColumn("Rue", typeof(String)));
+            dt.Columns.Add(new DataColumn("Code Postal", typeof(String)));
+            dt.Columns.Add(new DataColumn("Ville", typeof(String)));
 
             //boucle de remplissage de la DataTable à partir de la collection
             for(i=0;i<Donnees.ArrayStag.Count;i++)
@@ -61,6 +69,9 @@ namespace Exo7
                 dr[0] = Donnees.ArrayStag[i].NumOsia;
                 dr[1] = Donnees.ArrayStag[i].Nom;
                 dr[2] = Donnees.ArrayStag[i].Prenom;
+                dr[3] = Donnees.ArrayStag[i].Rue;
+                dr[4] = Donnees.ArrayStag[i].CodePostal;
+                dr[5] = Donnees.ArrayStag[i].Ville;
                 // ajout de la ligne à la Datatable
                 //(lma propriété row est elle-même une collection)
                 dt.Rows.Add(dr);

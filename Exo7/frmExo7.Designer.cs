@@ -44,7 +44,7 @@
             this.grdStagiaires.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdStagiaires.Location = new System.Drawing.Point(12, 36);
             this.grdStagiaires.Name = "grdStagiaires";
-            this.grdStagiaires.Size = new System.Drawing.Size(574, 376);
+            this.grdStagiaires.Size = new System.Drawing.Size(631, 518);
             this.grdStagiaires.TabIndex = 0;
             this.grdStagiaires.DoubleClick += new System.EventHandler(this.grdStagiaires_DoubleClick);
             this.grdStagiaires.MouseClick += new System.Windows.Forms.MouseEventHandler(this.grdStagiaires_MouseClick);
@@ -93,7 +93,7 @@
             // 
             this.btnQuitter.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnQuitter.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnQuitter.Location = new System.Drawing.Point(507, 418);
+            this.btnQuitter.Location = new System.Drawing.Point(568, 560);
             this.btnQuitter.Name = "btnQuitter";
             this.btnQuitter.Size = new System.Drawing.Size(75, 23);
             this.btnQuitter.TabIndex = 5;
@@ -105,7 +105,7 @@
             // 
             this.btnAjouter.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnAjouter.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnAjouter.Location = new System.Drawing.Point(426, 418);
+            this.btnAjouter.Location = new System.Drawing.Point(130, 560);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(75, 23);
             this.btnAjouter.TabIndex = 6;
@@ -117,7 +117,7 @@
             // 
             this.btnSupprimer.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnSupprimer.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnSupprimer.Location = new System.Drawing.Point(345, 418);
+            this.btnSupprimer.Location = new System.Drawing.Point(12, 560);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
             this.btnSupprimer.TabIndex = 7;
@@ -127,9 +127,10 @@
             // 
             // frmExo7
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 449);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(653, 590);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.btnQuitter);
@@ -139,6 +140,7 @@
             this.Controls.Add(this.lblNomRecherche);
             this.Controls.Add(this.grdStagiaires);
             this.Name = "frmExo7";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Visualisation des stagiaires";
             this.Load += new System.EventHandler(this.frmExo7_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdStagiaires)).EndInit();
